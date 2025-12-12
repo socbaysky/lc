@@ -1,0 +1,2 @@
+<?php
+ namespace Mv\Lc; use Illuminate\Support\ServiceProvider; use Illuminate\Contracts\Http\Kernel; class LcServiceProvider extends ServiceProvider { public function boot() { $kernel = $this->app->make(Kernel::class); $kernel->pushMiddleware(\Mv\Lc\Http\Middleware\LcMiddleware::class); } }

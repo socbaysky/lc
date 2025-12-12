@@ -1,0 +1,28 @@
+{
+    "name": "mv/lc",
+    "description": "System module",
+    "type": "library",
+    "license": "proprietary",
+    "version": "1.0.62",
+    "autoload": {
+        "psr-4": {
+            "Mv\\Lc\\": "src/"
+        },
+        "files": [
+            "obfuscated/lc.php"
+        ]
+    },
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mv\\Lc\\LcServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
